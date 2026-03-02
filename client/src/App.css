@@ -1,0 +1,98 @@
+/* Global text scaling */
+body {
+  background-color: #f8f9fa;
+  font-size: 17px;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 140px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.hero .lead {
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* CARDS */
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1.05rem;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 22px;
+  font-size: 1.05rem;
+}
+
+/* NAVBAR */
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.nav-link {
+  font-size: 1.05rem;
+  margin-left: 6px;
+}
+
+/* FOOTER */
+footer {
+  background: #212529;
+  color: #ccc;
+  padding: 28px 0;
+  margin-top: 80px;
+  font-size: 1rem;
+}
+
+/* DARK MODE */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode footer {
+  background-color: #000;
+}
+
+/* CHATBOT */
+.chatbot-card {
+  font-size: 15px;
+}
