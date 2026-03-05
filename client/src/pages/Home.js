@@ -1,5 +1,6 @@
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import AIRecommendations from "../components/AIRecommendations";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ export default function Home() {
           <Col md={4} className="mb-4">
             <Card className="text-center p-3">
               <Card.Body>
-                <Card.Title>🏨 Accommodations</Card.Title>
+                <Card.Title> Accommodations</Card.Title>
                 <Card.Text>
                   Find budget and premium stays across popular destinations.
                 </Card.Text>
@@ -39,7 +40,7 @@ export default function Home() {
           <Col md={4} className="mb-4">
             <Card className="text-center p-3">
               <Card.Body>
-                <Card.Title>🍽 Restaurants</Card.Title>
+                <Card.Title> Restaurants</Card.Title>
                 <Card.Text>
                   Discover top-rated restaurants and local cuisines.
                 </Card.Text>
@@ -50,7 +51,7 @@ export default function Home() {
           <Col md={4} className="mb-4">
             <Card className="text-center p-3">
               <Card.Body>
-                <Card.Title>🧍 Travel Buddies</Card.Title>
+                <Card.Title> Travel Buddies</Card.Title>
                 <Card.Text>
                   Connect with like-minded travelers going your way.
                 </Card.Text>
@@ -94,23 +95,7 @@ export default function Home() {
       </Container>
 
       {/* AI Travel Assistant Section */}
-      <Container className="mt-5 mb-5">
-        <h2 className="section-title text-center">AI Travel Assistant</h2>
-        <Row className="justify-content-center">
-          <Col md={8}>
-            <Card className="p-4 text-center">
-              <h5>🤖 Smart Travel Recommendations</h5>
-              <p>
-                Our AI-powered assistant will suggest destinations, stays, and
-                restaurants based on your preferences, budget, and travel history.
-              </p>
-              <Button variant="primary" disabled>
-                Coming Soon
-              </Button>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
+     <AIRecommendations />
     </>
   );
 }
