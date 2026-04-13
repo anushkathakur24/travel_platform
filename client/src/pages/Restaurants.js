@@ -79,6 +79,7 @@ export default function Restaurants() {
   }, [search]);
 
   return (
+    <div className="page-body">
     <>
       {/* Page Header */}
       <div className="hero-small text-center">
@@ -140,5 +141,6 @@ export default function Restaurants() {
         </Row>
       </Container>
     </>
+    </div>
   );
 }
