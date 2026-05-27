@@ -14,12 +14,12 @@
 
 | Feature | Description |
 |---|---|
-| 🔐 **Authentication** | JWT-based signup/login with bcrypt password hashing, protected routes, and persistent sessions |
-| 🏨 **Accommodations** | Browse and filter stays by location, price range, and type (budget → luxury) |
-| 🍽️ **Restaurants** | Discover dining options by city using live search |
-| 👫 **Travel Buddies** | Post your upcoming trip, connect with other travellers heading to the same destination, and manage incoming connection requests |
-| 🤖 **AI Chatbot** | Keyword-driven travel assistant covering 10+ destinations with tips on food, weather, visas, packing, and safety |
-| 🗺️ **Recommendations** | Curated destination guides (food, activities, best time to visit, budget, tips) for Paris, Tokyo, Goa, Bali, Manali, Ladakh, Kerala, Rajasthan, Maldives, Dubai |
+|  **Authentication** | JWT-based signup/login with bcrypt password hashing, protected routes, and persistent sessions |
+|  **Accommodations** | Browse and filter stays by location, price range, and type (budget → luxury) |
+|  **Restaurants** | Discover dining options by city using live search |
+|  **Travel Buddies** | Post your upcoming trip, connect with other travellers heading to the same destination, and manage incoming connection requests |
+|  **AI Chatbot** | Keyword-driven travel assistant covering 10+ destinations with tips on food, weather, visas, packing, and safety |
+|  **Recommendations** | Curated destination guides (food, activities, best time to visit, budget, tips) for Paris, Tokyo, Goa, Bali, Manali, Ladakh, Kerala, Rajasthan, Maldives, Dubai |
 
 ---
 
@@ -86,7 +86,7 @@ travel_platform/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js 18+
@@ -206,5 +206,5 @@ The React dev server proxies `/api/*` requests to `localhost:5000` automatically
 
 ## 👩‍💻 Authors
 
-**Anushka Thakur** · **Aditi Arun**  
-ICT 3230 — Group 19, Section E · MIT Manipal · AY 2025–26
+**Anushka Thakur** · 
+
