@@ -29,6 +29,22 @@ router.get("/", async (req, res) => {
   }
 });
 
+// ─── GET /api/buddies/mine  (protected) ──────────────────────────────────
+// Returns all buddy listings created by the logged-in user,
+// with connectionRequests populated so they can see who wants to connect.
+router.get("/mine", protect, async (req, res) => {
+  try {
+    const buddies = await Buddy.find({ user: req.user._id })
+      .populate("connectionRequests", "name email avatar")
+      .sort({ createdAt: -1 });
+
+    res.json({ count: buddies.length, buddies });
+  } catch (err) {
+    console.error("Fetch my buddies error:", err);
+    res.status(500).json({ message: "Server error fetching your listings" });
+  }
+});
+
 // ─── GET /api/buddies/:id ─────────────────────────────────────────────────
 router.get("/:id", async (req, res) => {
   try {
